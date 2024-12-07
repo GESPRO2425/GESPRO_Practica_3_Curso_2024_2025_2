@@ -60,8 +60,7 @@ class ApiaryPresenter implements ApiaryContract.Presenter {
     @Override
     public void result(int requestCode, int resultCode) {
         // If a hive was successfully added, show snackbar
-        if (AddEditApiaryActivity.REQUEST_ADD_APIARY == requestCode
-                && Activity.RESULT_OK == resultCode) {
+        if (AddEditApiaryActivity.REQUEST_ADD_APIARY == requestCode && Activity.RESULT_OK == resultCode) {
             apiaryHivesView.showSuccessfullySavedMessage();
         }
     }

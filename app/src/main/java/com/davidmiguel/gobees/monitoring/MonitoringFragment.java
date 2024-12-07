@@ -169,7 +169,6 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
                 });
                 // Set chronometer
                 chronometer.setBase(mService.getStartTime());
-                chronometer.setVisibility(View.VISIBLE);
                 chronometer.start();
             }
 
@@ -245,7 +244,7 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
     }
 
     @Override
-    public void startMonitoringService(MonitoringSettings ms) {
+    public void startRecordingService(MonitoringSettings ms) {
         // Start service
         Intent intent = new Intent(getActivity(), MonitoringService.class);
         intent.setAction(MonitoringService.START_ACTION);
@@ -254,7 +253,7 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
     }
 
     @Override
-    public void stopMonitoringService() {
+    public void stopRecordingService() {
         // Stop service
         Intent stopIntent = new Intent(getActivity(), MonitoringService.class);
         stopIntent.setAction(MonitoringService.STOP_ACTION);
@@ -262,7 +261,7 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
     }
 
     @Override
-    public void bindMonitoringService() {
+    public void bindRecordingService() {
         Intent intent = new Intent(getActivity(), MonitoringService.class);
         getActivity().bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
@@ -292,7 +291,7 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
             @Override
             public void onClick(View view) {
                 // Stop recording service
-                presenter.stopMonitoring();
+                presenter.stopRecording();
             }
         });
     }
