@@ -118,7 +118,7 @@ En esta captura se muestra cómo debe quedar el commit creado
 ## Captura del gráfico
 
 ![image](https://github.com/user-attachments/assets/f2bdaf4e-c777-498f-baee-d425f97fe3cb)
-
+En esta captura aparece minor fix 152 como ultimo commit cuando no debería ser asi, pero esque cuando estabamos terminando nos dimos cuenta de que no se habia creado bien, porque tuvimos un problema, que cuando entramos en github para hacer la pull request se nos cambio de organización y se creo en una diferente a la que en la que debiamos haberla creado, por eso la volvimos a crear bien al final.
 ## Primer commit
 
 ![image](https://github.com/user-attachments/assets/4d283790-7158-45d3-a386-821819aeee70)
