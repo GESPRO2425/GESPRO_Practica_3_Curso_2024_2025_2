@@ -146,10 +146,6 @@ public class MonitoringService extends Service implements AndroidCameraListener 
 
         // START action
         if (intent.getAction().equals(START_ACTION)) {
-            // Calculate start time (to be use in chronometer)
-            Date now = new Date();
-            long elapsedRealTimeOffset = System.currentTimeMillis() - SystemClock.elapsedRealtime();
-            startTime = now.getTime() - elapsedRealTimeOffset;
             // Get monitoring config
             monitoringSettings =
                     (MonitoringSettings) intent.getSerializableExtra(ARGUMENT_MON_SETTINGS);
@@ -234,6 +230,10 @@ public class MonitoringService extends Service implements AndroidCameraListener 
     public void onCameraStarted(int width, int height) {
         // Counter for creating background model with the first frames
         initialNumFrames = 0;
+        // Calculate start time (to be use in chronometer)
+        Date now = new Date();
+        long elapsedRealtimeOffset = System.currentTimeMillis() - SystemClock.elapsedRealtime();
+        startTime = now.getTime() - elapsedRealtimeOffset;
     }
 
     @Override
@@ -294,8 +294,6 @@ public class MonitoringService extends Service implements AndroidCameraListener 
     private Notification configNotification() {
         // Intent to the monitoring activity (when the notification is clicked)
         Intent monitoringIntent = new Intent(this, MonitoringActivity.class);
-        monitoringIntent.putExtra(MonitoringFragment.ARGUMENT_APIARY_ID,
-                monitoringSettings.getApiaryId());
         monitoringIntent.putExtra(MonitoringFragment.ARGUMENT_HIVE_ID,
                 monitoringSettings.getHiveId());
         PendingIntent pMonitoringIntent = PendingIntent.getActivity(this, 0,
