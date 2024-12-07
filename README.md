@@ -106,9 +106,37 @@ Después un Pull (fast-forward if possible)
 
 ![image](https://github.com/user-attachments/assets/ca5d8130-cdfd-45c5-93e4-679c06edd69e)
 
+
+
 Y por último otro Push
 
 ![image](https://github.com/user-attachments/assets/26ac4049-d3e1-4c13-91a2-4121a21c3f50)
 
 En esta captura se muestra cómo debe quedar el commit creado
 ![image](https://github.com/user-attachments/assets/4c5f1768-08f5-4f9b-9e0a-9cae60b45950)
+
+## Captura del gráfico
+
+![image](https://github.com/user-attachments/assets/f2bdaf4e-c777-498f-baee-d425f97fe3cb)
+
+## Primer commit
+
+![image](https://github.com/user-attachments/assets/4d283790-7158-45d3-a386-821819aeee70)
+
+## Último commit
+
+![image](https://github.com/user-attachments/assets/7efe3d9d-7333-4e3c-beca-28c7ca131c86)
+
+## La información del proyecto de Github obtenida desde la opción de menú "Insights→Pulse" (10%):
+
+![image](https://github.com/user-attachments/assets/cdbe1c24-a349-4310-87b5-42e2a205e89c)
+
+![image](https://github.com/user-attachments/assets/44e8899f-3828-4baa-9c63-740cdf358ae1)
+
+## La información del proyecto de Github obtenida desde la opción menú "Insights→ Code frequency" (10%)
+
+![image](https://github.com/user-attachments/assets/aece03a8-51c3-449e-b55f-6f74adfbe311)
+
+## Captura con la relación de las PRQs realizadas cerradas (10%)
+
+![image](https://github.com/user-attachments/assets/a49a0947-4d6e-483f-b6ea-6bc0b0314f84)
